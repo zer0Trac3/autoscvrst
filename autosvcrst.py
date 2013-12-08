@@ -1,7 +1,7 @@
 #   AUTO SERVICES RESTART (autosvcrst)
 #   VERSION: 0.2
 #   Tested on Windows XP, 7
-#   module need (time, wmi, argparse, win32serviceutil, sys, time)
+#   module needed (time, wmi, argparse, win32serviceutil, sys, time)
 #   Created by: Armando & Zer0Trac3
 #
 #
@@ -98,25 +98,3 @@ if __name__ == '__main__':
     elif ServicesList.u:
             while True:
                 send = split(ServicesList)
-    
-    
-    ############################# OLD v0.1 code ################################
-    #######Removed from v0.2 didn't need after using argparse###################
-    #######Keeping code until final decision to completely remove###############
-    
-    #Declare ServicesList string
-#    ServicesList = ''
-
-#    if len(sys.argv) <= 1:
-#        print "ERROR: You must supply at least one service if multiple service required separate with a comma \n"
-#        print "example: Apache2.4 or Apache2.4,MySQL\n"
-#        sys.exit()
-        
-#    else:
-#        ServicesList = str(sys.argv[1])
-
-# Endless loop (will sleep for 5 sec. before re-checking)
-#while True:
-#    send = split(ServicesList)
-#    time.sleep(5)
-    
